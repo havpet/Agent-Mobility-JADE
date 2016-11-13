@@ -90,7 +90,6 @@ public class MobileAgent extends Agent {
 					
 				case 4:
 					_state++;
-					System.out.println(">>Agent is here<<");
 					if(location != mostAvailable) {
 						System.out.println("Moving to " + _dests[mostAvailable].getName() + " because it won..");
 						myAgent.doMove(_dests[mostAvailable]);
@@ -115,12 +114,6 @@ public class MobileAgent extends Agent {
 		});
 		
 	}
-	
-	public void beforeMove() {
-	}
-	
-	public void afterMove() {
-    }
 	
 	
 
